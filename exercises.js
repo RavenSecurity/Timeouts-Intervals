@@ -2,16 +2,17 @@ window.onload = function() {
 
 // Exercise 1
 
-// let str = 'Typewritter'.split('');
+let str = 'Typewritter'.split('');
 
-// const interval = setInterval(() => {
-//   document.write(str[0]);
-//   str = str.slice(1);
+const interval = setInterval(() => {
+  let type = document.querySelector(".typew")
+  type.innerText = type.innerText + str[0];
+  str = str.slice(1);
   
-//   if (!str.length) {
-//     clearInterval(interval);
-//   }
-// }, 1000);
+  if (!str.length) {
+    clearInterval(interval);
+  }
+}, 1000);
 
 // Exercise 2
 
